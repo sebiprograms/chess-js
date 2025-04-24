@@ -2,8 +2,10 @@
   display: grid;
   padding: 15px;
   gap: px;
+  justify-self: center;
   grid-template-columns: repeat(8, 60px);
   grid-template-rows: repeat(8, 60px);
+  background-color: rgb(85, 89, 94);
 }
 
 #cell {
