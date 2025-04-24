@@ -15,8 +15,12 @@ for(i = 0; i < 8; i++){
   board[letter] = [];
 
   for(row = 0; row < 8; row++){
+
     board[letter].push(cell[rowptr]);
-    console.log(board[letter][row].textContent)
+
+    board[letter][row].addEventListener(onclick, (e) => {
+      console.log(e.textContent)
+    });
     rowptr++
   }
 
